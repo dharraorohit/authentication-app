@@ -49,7 +49,7 @@ curl --location 'http://127.0.0.1:8081/refresh-token' \
 
 # Notes
 
-1) Implemented expire token mechanism by Story created_at timestamp in jwt token payload and then checked the timestamp at time of token verification.
+1) Implemented expire token mechanism by storing created_at timestamp in jwt token payload and then checked the timestamp at time of token verification.
 
 2) Implemented Revoke token mechanism by storing a entry in TokenData table and storing the respective TokenData id in jwt token. 
 To revoke token, update the TokenData's is_revoked flag to false. 
