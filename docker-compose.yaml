@@ -1,0 +1,7 @@
+services:
+  authapp:
+    build:
+      context: .
+    ports:
+      - 8081:5000
+    command: ["python3", "run.py"]
